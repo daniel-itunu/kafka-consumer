@@ -9,5 +9,8 @@
         <module name="Kafka-consumer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Kafka-consumer" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
