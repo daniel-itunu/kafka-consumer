@@ -5,22 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0bc3f81-9ad4-4266-804c-1624442aae07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/KafkaConsumerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/ConsumerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/impl/ConsumerServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/azure/azureSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/configuration/ConsumerConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/ConsumerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/KafkaConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/KafkaConsumerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ConsumerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/ConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/ConsumerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/ConsumerConfigurationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/impl/ConsumerServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/impl/ConsumerServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/KafkaConsumerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/KafkaConsumerApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/configuration/ConsumerConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/ConsumerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/configuration/ConsumerConfigurationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/ConsumerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ConsumerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/impl/ConsumerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/impl/ConsumerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/impl/ConsumerServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/service/impl/ConsumerServiceImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,15 +53,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -74,7 +75,7 @@
       <recent name="configuration" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConsumerServiceImplTest.consume">
+  <component name="RunManager" selected="Application.KafkaConsumerApplication">
     <configuration name="KafkaConsumerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KafkaConsumerApplication" />
       <module name="Kafka-consumer" />
@@ -97,7 +98,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerServiceImplTest.consume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsumerServiceImplTest.subscribeIllegalAccessException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Kafka-consumer" />
       <extension name="coverage">
         <pattern>
@@ -107,13 +108,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="service.impl" />
       <option name="MAIN_CLASS_NAME" value="service.impl.ConsumerServiceImplTest" />
-      <option name="METHOD_NAME" value="consume" />
+      <option name="METHOD_NAME" value="subscribeIllegalAccessException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerServiceImplTest.properties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsumerServiceImplTest.subscribeIllegalStateArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Kafka-consumer" />
       <extension name="coverage">
         <pattern>
@@ -123,13 +124,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="service.impl" />
       <option name="MAIN_CLASS_NAME" value="service.impl.ConsumerServiceImplTest" />
-      <option name="METHOD_NAME" value="properties" />
+      <option name="METHOD_NAME" value="subscribeIllegalStateArgumentException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerServiceImplTest.subscribe_success_scenario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsumerServiceImplTest.subscribeIllegalStateArugmentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Kafka-consumer" />
       <extension name="coverage">
         <pattern>
@@ -139,7 +140,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="service.impl" />
       <option name="MAIN_CLASS_NAME" value="service.impl.ConsumerServiceImplTest" />
-      <option name="METHOD_NAME" value="subscribe_success_scenario" />
+      <option name="METHOD_NAME" value="subscribeIllegalStateArugmentException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ConsumerServiceImplTest.consume" />
         <item itemvalue="Application.KafkaConsumerApplication" />
         <item itemvalue="JUnit.ConsumerServiceImplTest" />
-        <item itemvalue="JUnit.ConsumerServiceImplTest.properties" />
-        <item itemvalue="JUnit.ConsumerServiceImplTest.subscribe_success_scenario" />
+        <item itemvalue="JUnit.ConsumerServiceImplTest.subscribeIllegalAccessException" />
+        <item itemvalue="JUnit.ConsumerServiceImplTest.subscribeIllegalStateArgumentException" />
+        <item itemvalue="JUnit.ConsumerServiceImplTest.subscribeIllegalStateArugmentException" />
       </list>
     </recent_temporary>
   </component>
@@ -176,5 +177,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Kafka_consumer$ConsumerServiceImplTest_consume.ic" NAME="ConsumerServiceImplTest.consume Coverage Results" MODIFIED="1652962696136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>service.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Kafka_consumer$ConsumerServiceImplTest.ic" NAME="ConsumerServiceImplTest Coverage Results" MODIFIED="1652984331520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>service.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Kafka_consumer$ConsumerServiceImplTest_IOException.ic" NAME="ConsumerServiceImplTest.IOException Coverage Results" MODIFIED="1652954136371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>service.impl.*</FILTER>
+    </SUITE>
   </component>
 </project>
