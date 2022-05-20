@@ -16,8 +16,8 @@ import java.util.Set;
 import java.util.logging.Logger;
 
 public class ConsumerServiceImpl implements ConsumerService {
-    private final Logger LOGGER = Logger.getLogger(ConsumerServiceImpl.class.getName());
     public static final String PATH = "src/main/resources/application.properties";
+    private final Logger LOGGER = Logger.getLogger(ConsumerServiceImpl.class.getName());
 
     /**
      * This method provides entry point to running the consumer application
@@ -41,6 +41,7 @@ public class ConsumerServiceImpl implements ConsumerService {
 
     /**
      * This method loads broker's key-value config from application.properties file.
+     *
      * @param path: specifies the location of the application.properties file containing broker configurations.
      * @return: returns the properties loaded in the application.properties and ConsumerConfig(key-value deserializer)
      **/
@@ -64,8 +65,9 @@ public class ConsumerServiceImpl implements ConsumerService {
 
     /**
      * This method subscribes the consumer to a topic.
+     *
      * @param consumer: specifies the consumer object to subscribe to a topic.
-     * @param topic: specifies the topic to be subscribed to by the above consumer.
+     * @param topic:    specifies the topic to be subscribed to by the above consumer.
      * @return :specifies a set of subscriptions made by the consumer.
      **/
     @Override
@@ -84,7 +86,8 @@ public class ConsumerServiceImpl implements ConsumerService {
 
     /**
      * This method performs the consume operation in multithreaded fashion for a given minute specified in param(consumptionRuntime).
-     * @param consumer: specifies the consumer object making the consume operation.
+     *
+     * @param consumer:           specifies the consumer object making the consume operation.
      * @param consumptionRuntime: specifies the amount of time in minutes the consume operation should run before graceful shutdown.
      * @return :specifies a set of subscriptions made by the consumer.
      */
