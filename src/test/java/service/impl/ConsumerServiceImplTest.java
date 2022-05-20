@@ -99,7 +99,7 @@ class ConsumerServiceImplTest {
 
     /***
      * This method tests the consume method against number format exceptions likely to occur during
-     * if a non natural/numeric value is passed as value to the consume.time.minutes in application.properties file.
+     * if a non-natural/numeric value is passed as value to the consume.time.minutes in application.properties file.
      */
     @Test
     void consumptionNumberFormatException() {

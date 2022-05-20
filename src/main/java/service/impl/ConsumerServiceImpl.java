@@ -24,7 +24,7 @@ public class ConsumerServiceImpl implements ConsumerService {
      */
     @Override
     public void start() throws Exception {
-        KafkaConsumer<String, String> consumer = null;
+        KafkaConsumer<String, String> consumer;
         try {
             consumer = new KafkaConsumer<String, String>(connect(PATH));
         } catch (Exception ex) {
@@ -40,14 +40,13 @@ public class ConsumerServiceImpl implements ConsumerService {
 
 
     /**
-     * This method loads broker's key-value config from application.properties file
-     *
+     * This method loads broker's key-value config from application.properties file.
      * @param path: specifies the location of the application.properties file containing broker configurations.
      * @return: returns the properties loaded in the application.properties and ConsumerConfig(key-value deserializer)
      **/
     @Override
     public Properties connect(String path) throws Exception {
-        Properties properties = null;
+        Properties properties;
         try (InputStream propertiesStream = new FileInputStream(path)) {
             properties = new Properties();
             properties.load(propertiesStream);
@@ -65,7 +64,6 @@ public class ConsumerServiceImpl implements ConsumerService {
 
     /**
      * This method subscribes the consumer to a topic.
-     *
      * @param consumer: specifies the consumer object to subscribe to a topic.
      * @param topic: specifies the topic to be subscribed to by the above consumer.
      * @return :specifies a set of subscriptions made by the consumer.
@@ -91,8 +89,8 @@ public class ConsumerServiceImpl implements ConsumerService {
      * @return :specifies a set of subscriptions made by the consumer.
      */
     @Override
-    public Set<String> consume(Consumer<String, String> consumer, String consumptionRuntime) throws Exception {
-        ConsumerRecords<String, String> consumerRecords = null;
+    public Set<String> consume(Consumer<String, String> consumer, String consumptionRuntime) {
+        ConsumerRecords<String, String> consumerRecords;
         String statusMessage = "";
         Integer consumptionRuntimeIntValue;
         try {

@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f0bc3f81-9ad4-4266-804c-1624442aae07" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ConsumerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/ConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/ConsumerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/service/impl/ConsumerServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/impl/ConsumerServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/ConsumerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ConsumerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/impl/ConsumerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/impl/ConsumerServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/service/impl/ConsumerServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/service/impl/ConsumerServiceImplTest.class" afterDir="false" />
     </list>
