@@ -9,6 +9,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/service/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ConsumerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/ConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/ConsumerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/service/impl/ConsumerServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/impl/ConsumerServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/impl/ConsumerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/impl/ConsumerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/impl/ConsumerServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/service/impl/ConsumerServiceImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +77,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in Kafka-consumer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kafka-consumer" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConsumerServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Kafka-consumer" />
       <extension name="coverage">
@@ -86,6 +96,22 @@
       <option name="PACKAGE_NAME" value="service.impl" />
       <option name="MAIN_CLASS_NAME" value="service.impl.ConsumerServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerServiceImplTest.start" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kafka-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service.impl" />
+      <option name="MAIN_CLASS_NAME" value="service.impl.ConsumerServiceImplTest" />
+      <option name="METHOD_NAME" value="start" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,45 +132,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerServiceImplTest.subscribeIllegalStateArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Kafka-consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="service.impl" />
-      <option name="MAIN_CLASS_NAME" value="service.impl.ConsumerServiceImplTest" />
-      <option name="METHOD_NAME" value="subscribeIllegalStateArgumentException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsumerServiceImplTest.subscribeIllegalStateArugmentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Kafka-consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="service.impl" />
-      <option name="MAIN_CLASS_NAME" value="service.impl.ConsumerServiceImplTest" />
-      <option name="METHOD_NAME" value="subscribeIllegalStateArugmentException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.KafkaConsumerApplication" />
+        <item itemvalue="JUnit.ConsumerServiceImplTest.start" />
         <item itemvalue="JUnit.ConsumerServiceImplTest" />
+        <item itemvalue="JUnit.All in Kafka-consumer" />
         <item itemvalue="JUnit.ConsumerServiceImplTest.subscribeIllegalAccessException" />
-        <item itemvalue="JUnit.ConsumerServiceImplTest.subscribeIllegalStateArgumentException" />
-        <item itemvalue="JUnit.ConsumerServiceImplTest.subscribeIllegalStateArugmentException" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +152,17 @@
       <updated>1652879022251</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -174,7 +179,7 @@
     <SUITE FILE_PATH="coverage/Kafka_consumer$ConsumerServiceImplTest_consume.ic" NAME="ConsumerServiceImplTest.consume Coverage Results" MODIFIED="1652962696136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>service.impl.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Kafka_consumer$ConsumerServiceImplTest.ic" NAME="ConsumerServiceImplTest Coverage Results" MODIFIED="1652984331520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Kafka_consumer$ConsumerServiceImplTest.ic" NAME="ConsumerServiceImplTest Coverage Results" MODIFIED="1653045874860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>service.impl.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Kafka_consumer$ConsumerServiceImplTest_IOException.ic" NAME="ConsumerServiceImplTest.IOException Coverage Results" MODIFIED="1652954136371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
