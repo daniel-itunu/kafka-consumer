@@ -40,6 +40,7 @@ class ConsumerServiceImplTest {
         assertTrue("localhost:9092".equals(properties.getProperty("bootstrap.servers")));
         assertTrue("gamers-group".equals(properties.getProperty("group.id")));
         assertTrue("gamers-topic".equals(properties.getProperty("topic")));
+        assertTrue("latest".equals(properties.getProperty("auto.offset.reset")));
     }
 
     /***
