@@ -31,7 +31,7 @@ class ConsumerServiceImplTest {
 
     @Test
     void properties() throws Exception {
-        Properties properties = consumerService.properties("src/main/resources/application.properties");
+        Properties properties = consumerService.connect("src/main/resources/application.properties");
         assertTrue("localhost:9092".equals(properties.getProperty("bootstrap.servers")));
         assertTrue("gamers-group".equals(properties.getProperty("group.id")));
         assertTrue("gamers-topic".equals(properties.getProperty("topic")));
@@ -88,7 +88,7 @@ class ConsumerServiceImplTest {
     @Test
     void propertiesIOException() {
         Exception exception = assertThrows(Exception.class, () -> {
-            consumerService.properties("/wrong/path");
+            consumerService.connect("/wrong/path");
         });
         assertTrue("/wrong/path (No such file or directory)".equals(exception.getMessage()));
     }

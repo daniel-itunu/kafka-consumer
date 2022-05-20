@@ -26,7 +26,7 @@ public class ConsumerServiceImpl implements ConsumerService {
      * @return: returns the properties loaded in the application.properties and ConsumerConfig(key-value deserializer)
      **/
     @Override
-    public Properties properties(String path) throws Exception {
+    public Properties connect(String path) throws Exception {
         Properties properties = null;
         try (InputStream propertiesStream = new FileInputStream(path)) {
             properties = new Properties();
@@ -109,16 +109,15 @@ public class ConsumerServiceImpl implements ConsumerService {
     public void start() throws Exception {
         KafkaConsumer<String, String> consumer = null;
         try{
-            consumer = new KafkaConsumer<String, String>(properties(PATH));
+            consumer = new KafkaConsumer<String, String>(connect(PATH));
         }catch (Exception ex){
             LOGGER.info("Ensure all key-value pairs config in application.properties are present");
             LOGGER.severe("Exception occurred: "+ex.getCause().getMessage());
             throw new KafkaException(ex.getCause().getMessage());
         }
-        subscribe(consumer, properties(PATH).getProperty("topic"));
-        consume(consumer, properties(PATH).getProperty("consume.time.minutes"));
+        subscribe(consumer, connect(PATH).getProperty("topic"));
+        consume(consumer, connect(PATH).getProperty("consume.time.minutes"));
         consumer.close();
-        consumer.wakeup();
         LOGGER.info("Shutdown success");
         System.exit(0);
     }
