@@ -4,4 +4,4 @@ target/
 .project
 .idea
 .settings
-madapi-mtn-manage-subscriptions-pantheon-system.iml
+Kafka-consumer.iml
